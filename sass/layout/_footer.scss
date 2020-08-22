@@ -1,0 +1,124 @@
+.footer {
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  .container {
+    display: flex;
+  }
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+  color: $accent-color;
+}
+
+%font-footer-adress {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.footer-mail {
+  margin-bottom: 9px;
+}
+.footer-mail,
+.footer-tel {
+  @extend %font-footer-adress;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-address {
+  @extend %font-footer-adress;
+  color: #ffffff;
+}
+.footer-text {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.footer-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 231px;
+  height: 81px;
+}
+.footer-list-item {
+  margin-bottom: 9px;
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-list-item-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+.footer-list-item-link-svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+.footer-add {
+  margin-right: 69px;
+  .logo {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+}
+.footer-com-on {
+  width: 206px;
+  padding-top: 12px;
+  padding-bottom: 40px;
+  margin-right: 94px;
+}
+
+.signature-text {
+  padding-top: 12px;
+  margin-bottom: 20px;
+}
+.signature-form {
+  display: flex;
+}
+.signature-input {
+  font-size: 16px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  margin-right: 12px;
+  padding-left: 16px;
+}
+.airplan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 28px;
+  padding-left: 29px;
+}
+.icon-airplan-svg {
+  fill: #ffffff;
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}

@@ -1,0 +1,15 @@
+@import "./utils/normalize";
+@import "./utils/variables";
+@import "./base/base";
+@import "./utils/placeholders";
+@import "./components/container";
+@import "./components/modal";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/advantages";
+@import "./layout/what-we-do";
+@import "./layout/team.scss";
+@import "./layout/our-client";
+@import "./layout/footer";
+@import "./layout/portfolio";
