@@ -115,3 +115,15 @@
     margin-bottom: 94px;
   }
 }
+.portfolio:after {
+  display: block;
+  width: 99px;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+  content: "";
+  bottom: 0px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
