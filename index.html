@@ -13,63 +13,67 @@
   <body>
     <!-- Шапка -->
     <header class="header">
-      <div class="container">
-        <nav class="navigation">
-          <a
-            class="logo link"
-            href="./index.html"
-            lang="en"
-            aria-label="логотип"
-            ><span class="blue">Web</span> Studio</a
-          >
-          <ul class="navigation-list list">
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link studio" href="./index.html">
-                Студия</a
-              >
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="./portfolio.html"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation-list-item">
-              <a class="navigation-list-link link" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="header-adress">
-          <ul class="adress-list list">
-            <li class="adress-list-item">
-              <a class="header-mail link" href="mailto:info@devstudio.com">
-                <svg class="icon-mail margin">
-                  <use href="./img/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li>
-              <a class="header-tel link" href="tel:+380961111111"
-                ><svg class="icon-phone margin">
-                  <use href="./img/sprite.svg#icon-phone"></use></svg
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+      <div class="container header-container">
+        <a class="logo link" href="./index.html" lang="en" aria-label="логотип"
+          ><span class="blue">Web</span> Studio</a
+        >
+        <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-wrapper" data-menu-button>
+          <svg width="40" height="40">
+            <use class="icon-burger" href="./img/sprite.svg#menu-burger"></use>
+            <use class="icon-close" href="./img/sprite.svg#menu-close"><use>  
+          </svg>
+        </button>
+        <div class="menu-wrapper" data-menu>
+          <nav class="navigation">
+            <ul class="navigation-list list">
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link studio" href="./index.html">
+                  Студия</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation-list-item">
+                <a class="navigation-list-link link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="header-adress">
+            <ul class="adress-list list">
+              <li class="adress-list-item">
+                <a class="header-mail link" href="mailto:info@devstudio.com">
+                  <svg class="icon-mail">
+                    <use href="./img/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li>
+                <a class="header-tel link" href="tel:+380961111111">
+                  <svg class="icon-phone">
+                    <use href="./img/sprite.svg#icon-phone"></use>
+                    </svg>+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </header>
 
     <!-- Главный контейнер -->
-    <main>
-      <!--Герой-->
-      <section class="hero">
+    <!--<main>-->
+    <!--Герой-->
+    <!--<section class="hero">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
         <button class="modal-btn" data-modal-open>Заказать услугу</button>
-      </section>
+      </section>-->
 
-      <!--Преимущества-->
-      <section class="advantages">
+    <!--Преимущества-->
+    <!--<section class="advantages">
         <h2 hidden>Преимущества</h2>
         <div class="container">
           <ul class="advantages-list list">
@@ -115,10 +119,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
-      <!--Чем мы занимаемся-->
-      <section class="occupation">
+    <!--Чем мы занимаемся-->
+    <!--<section class="occupation">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="occupation-list list">
@@ -166,10 +170,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
-      <!--Наша команда-->
-      <section class="team">
+    <!--Наша команда-->
+    <!--<section class="team">
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="team-list list">
@@ -375,10 +379,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section>-->
 
-      <!--Постоянные клиенты-->
-      <section class="our-client">
+    <!--Постоянные клиенты-->
+    <!--<section class="our-client">
         <div class="container">
           <h2 class="title">Постоянные клиенты</h2>
           <ul class="client list">
@@ -438,11 +442,11 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main>
+      </section>-->
+    <!--</main>-->
 
     <!-- Подвал -->
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container">
         <div class="footer-add">
           <a class="logo link" href="./index.html"
@@ -538,11 +542,10 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer>-->
 
     <!--Модальное окно-->
-
-    <div class="modal-page is-hidden" data-modal>
+    <!--<div class="modal-page is-hidden" data-modal>
       <form
         class="modal-form"
         action="#"
@@ -614,7 +617,8 @@
           </svg>
         </button>
       </form>
-    </div>
+    </div>-->
+    <script src="./js/menu-burger.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
