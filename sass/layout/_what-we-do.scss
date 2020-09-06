@@ -1,4 +1,5 @@
 .occupation {
+  display: block;
   padding-bottom: 94px;
 }
 .title {
@@ -37,7 +38,20 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-.subtitle {
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .occupation {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .occupation {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .occupation {
+    display: block;
+  }
 }
