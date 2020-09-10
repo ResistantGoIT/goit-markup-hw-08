@@ -439,7 +439,7 @@ body {
 .modal-form-title {
   font-weight: bold;
   font-size: 20px;
-  line-height: 23px;
+  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -571,7 +571,7 @@ body {
 
 .modal-form-option-span {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -621,6 +621,17 @@ body {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form {
+    width: 450px;
+    height: 609px;
+  }
+  .modal-form-option-span {
+    font-size: 12px;
+    line-height: 0.857;
+  }
 }
 
 .navigation {
