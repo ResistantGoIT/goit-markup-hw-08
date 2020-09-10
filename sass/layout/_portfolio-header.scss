@@ -1,0 +1,21 @@
+.portfolio:after {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: $accent-color;
+  border-radius: 2px;
+  content: "";
+  bottom: 0px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (min-width: 768px) {
+  .navigation-list-link {
+    position: relative;
+  }
+  .portfolio:after {
+    position: absolute;
+    top: 28px;
+  }
+}

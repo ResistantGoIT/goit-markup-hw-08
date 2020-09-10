@@ -634,6 +634,10 @@ body {
   }
 }
 
+.header .logo {
+  color: #212121;
+}
+
 .navigation {
   display: flex;
   justify-content: center;
@@ -706,6 +710,7 @@ body {
     padding-left: 120px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
     transform: translateY(-120%);
+    z-index: 100;
   }
   .menu-wrapper.is-open {
     transform: translateY(0);
@@ -1711,6 +1716,29 @@ body {
   }
 }
 
+.portfolio:after {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  content: "";
+  bottom: 0px;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-list-link {
+    position: relative;
+  }
+  .portfolio:after {
+    position: absolute;
+    top: 28px;
+  }
+}
+
 .filter-list {
   display: flex;
   margin-top: 94px;
@@ -1748,6 +1776,22 @@ body {
   border: none;
 }
 
+@media screen and (max-width: 767px) {
+  .filter-list {
+    flex-wrap: wrap;
+    margin-top: 39px;
+  }
+  .filter-list-item {
+    margin-top: 21px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    margin-top: 60px;
+  }
+}
+
 .filter-examples-name {
   font-weight: bold;
   font-size: 18px;
@@ -1769,7 +1813,7 @@ body {
   margin-left: 24px;
 }
 
-.filter-examples-link {
+.filter-examples-list-item {
   width: 370px;
   height: 404px;
   border: 1px solid #eeeeee;
@@ -1777,7 +1821,7 @@ body {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-examples-link:hover, .filter-examples-link:focus {
+.filter-examples-list-item:hover, .filter-examples-list-item:focus {
   box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
   border: none;
 }
@@ -1789,6 +1833,10 @@ body {
 
 .img-animation:hover, .img-animation:focus {
   background-color: rgba(33, 150, 243, 0.9);
+}
+
+.img-animation .img-block {
+  margin-bottom: 0;
 }
 
 .overlay {
@@ -1827,24 +1875,44 @@ body {
   margin-bottom: 30px;
 }
 
-.filter-examples-list-item:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (max-width: 767px) {
+  .filter-examples-list-item {
+    width: 450px;
+    height: 404px;
+  }
+  .filter-examples-list-item:last-child {
+    margin-bottom: 60px;
+  }
 }
 
-.filter-examples-list-item:nth-last-child(-n + 3) {
-  margin-bottom: 94px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter-list {
+    margin-bottom: 40px;
+  }
+  .filter-examples-list-item {
+    width: 354px;
+  }
+  .filter-examples-list-item:nth-child(2n) {
+    margin-right: 0px;
+  }
+  .filter-examples-list-item:last-child {
+    margin-bottom: 60px;
+  }
+  .filter-examples-link {
+    width: 354px;
+    height: 404px;
+  }
+  .filter-examples-list .idiots {
+    height: 440px;
+  }
 }
 
-.portfolio:after {
-  display: block;
-  width: 99px;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
-  content: "";
-  bottom: 0px;
-  margin-top: 8px;
-  margin-left: auto;
-  margin-right: auto;
+@media screen and (min-width: 1200px) {
+  .filter-examples-list-item:nth-child(3n) {
+    margin-right: 0px;
+  }
+  .filter-examples-list-item:nth-last-child(-n + 3) {
+    margin-bottom: 94px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
