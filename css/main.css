@@ -1526,6 +1526,8 @@ body {
 }
 
 .footer-list {
+  width: 44px;
+  height: 44px;
   display: flex;
   flex-wrap: wrap;
   width: 231px;
@@ -1559,10 +1561,6 @@ body {
   fill: #ffffff;
 }
 
-.footer-add {
-  margin-right: 69px;
-}
-
 .footer-add .logo {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -1574,7 +1572,6 @@ body {
   width: 206px;
   padding-top: 12px;
   padding-bottom: 40px;
-  margin-right: 94px;
 }
 
 .signature-text {
@@ -1616,6 +1613,91 @@ body {
   margin-left: 10px;
   width: 24px;
   height: 24px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding-bottom: 60px;
+  }
+  .footer .container {
+    flex-wrap: wrap;
+  }
+  .logo {
+    color: #ffffff;
+    text-align: center;
+  }
+  .signature-form {
+    flex-direction: column;
+  }
+  .signature-text {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 38px;
+  }
+  .signature-input {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-wrapper {
+    margin: 0px auto;
+  }
+  .footer-list li {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .footer-text {
+    text-align: center;
+  }
+  .footer-com-on {
+    width: 100%;
+    margin: 0px auto;
+    padding: 0;
+  }
+  .footer-add address {
+    margin-bottom: 60px;
+  }
+  .width-link {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    padding-bottom: 40px;
+  }
+  .footer .container {
+    display: block;
+  }
+  .footer-wrapper {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .signature-form {
+    flex-direction: column;
+  }
+  .footer-text {
+    text-align: center;
+  }
+  .signature-input {
+    margin: 0px auto;
+    width: 450px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-add {
+    margin-right: 69px;
+  }
+  .footer-com-on {
+    margin-right: 94px;
+  }
+  .footer-wrapper {
+    display: flex;
+  }
 }
 
 .filter-list {
